@@ -3,6 +3,9 @@
 
 <head>
     <title>Sololearn web site</title>
+    <style>
+        #table td {border:4px dotted yellow}
+    </style>
 </head>
 <body style="background-color: blanchedalmond">
 <h1 align="center"> Well, let the fun begin </h1>
@@ -87,20 +90,82 @@
 <p>abbreviation<abbr title="Rafal Sobotka">"RS"</abbr>or an acronym </p>
 
 <address>
-Written by John Doe.<br>
-Visit us at:<br>
-Example.com<br>
-Box 564, Disneyland<br>
-USA
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
 </address>
 <p>line break before and after address</p>
 
 <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
 
 <bdo dir="rtl">This text will be written from right to left</bdo>
+<hr width="50%"/>
+<h3 style="text-align: center;font-size: x-large;font-family: 'Comic Sans MS';color: darkorchid;background-color: rgba(0,128,128,0.6);border: 5px dotted tomato; background-position: ">
+    Creating Tables</h3>
 
+<table border="2" align="center" style="border-color: salmon">
+    <tr>
+        <td bgcolor="red">Red</td>
+        <td>Blue</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow">Yellow</td>
+        <td colspan="2">Orange</td>
+    </tr>
+</table>
 
+<br/>
 
+<table id="table" align="center" border="1"
+       style="font-family:Elephant;background-color:rgba(127,255,212,0.6); color: darkorchid;border:5px dashed yellow;border-collapse: collapse">
+    <tr>
+        <td>Day</td>
+        <td>Monday</td>
+        <td>Tuesday</td>
+        <td>Wednesday</td>
+        <td>Thursday</td>
+        <td>Friday</td>
+        <td>Saturday</td>
+        <td>Sunday</td>
+    </tr>
+    <tr>
+        <td>8:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2" rowspan="2" style="text-align: center;color:tomato;font-size:large; ">Coding</td>
+    </tr>
+    <tr>
+        <td>10:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
 
-</body>
+    </tr>
+</table>
+<br/>
+<table align="center" border="2" bordercolor="blue" bgcolor="black">
+    <tr>
+        <td rowspan="2" ; bgcolor="red">Red</td>
+        <td bgcolor="blue">Blue</td>
+        <td bgcolor="green">Green</td>
+    </tr>
+    <tr>
+        <td colspan="2" ; bgcolor="yellow">Yellow</td>
+
+    </tr>
+</table>
+<br/>
+<hr width="75%" style="border: 2px dashed blue"
+
+<p>Lubie <span style="border: 5px dotted palegreen;font-family: 'Comic Sans MS',serif;font-weight: bold;font-style: italic"> bardzo </span>Placki</p>
+
+</hr></body>
 </html>
