@@ -58,26 +58,30 @@
         colorful button</a></button>
 <hr style="text-align: center;width: 75%;"/>
 <h1 style="text-align: center;color:teal;font-family: 'Comic Sans MS',sans-serif">Formatting</h1>
-<ol>
-    <li style="text-align: center"><b>Bold text</b></li>
-    <li><strong>Strong text</strong></li>
-    <li><i>Italic text</i></li>
-    <li><em>Emphasized text</em></li>
-    <li>
-        <mark>Marked text</mark>
-    </li>
-    <li>
-        <small>Small text</small>
-    </li>
-    <li>
-        <del>Deleted text</del>
-    </li>
-    <li>
-        <ins>Inserted text</ins>
-    </li>
-    <li><sub>Subscript text</sub></li>
-    <li><sup>superscript text</sup></li>
-</ol>
+<div id="demo">
+    <ol>
+        <li style="text-align: center"><b>Bold text</b></li>
+        <li><strong>Strong text</strong></li>
+        <li><i>Italic text</i></li>
+        <li><em>Emphasized text</em></li>
+        <li>
+            <mark>Marked text</mark>
+        </li>
+        <li>
+            <small>Small text</small>
+        </li>
+        <li>
+            <del>Deleted text</del>
+        </li>
+        <li>
+            <ins>Inserted text</ins>
+        </li>
+        <li><sub>Subscript text</sub></li>
+        <li><sup>superscript text</sup></li>
+    </ol>
+</div>
+<button type="button" onclick="document.getElementById('demo').style.fontFamily='Comic Sans Ms, sans-serif'"> Button
+</button>
 <hr style="text-align: center;width: 75%"/>
 <h1>Quotations</h1>
 
@@ -121,8 +125,8 @@
 
 <br/>
 
-<table id="table" align="right"
-       style="font-family:Elephant;background-color:rgba(127,255,212,0.5); color: darkorchid;border:5px dashed yellow;border-collapse: collapse">
+<table id="table"
+       style="width: 100%;font-family:Elephant;background-color:rgba(127,255,212,0.5); color: darkorchid;border:5px dashed yellow;border-collapse: collapse">
     <tr>
         <td>Day</td>
         <td>Monday</td>
