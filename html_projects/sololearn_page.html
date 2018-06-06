@@ -3,21 +3,66 @@
 
 <head>
     <title>Sololearn web site</title>
+    <style>
+        .yellow-table td, th {
+            border: 4px dotted yellow;
+            text-align: center;
+        }
+
+        .activity {
+            text-align: center;
+            background: rgba(100, 149, 237, 0.7);
+            color: white;
+        }
+
+        h1#table {
+
+            font-size: 15pt;
+            color: #20bcd5;
+            text-align: center;
+            padding: 18px 0 18px 0;
+            margin: 0 0 10px 0;
+        }
+
+        span#table {
+            border: 4px dashed #20bcd5;
+            padding: 10px;
+        }
+
+
+    </style>
 </head>
-<body>
+<body style="background-color: blanchedalmond">
 <h1 align="center"> Well, let the fun begin </h1>
 <hr width="50%"/>
 
 <p>lests start with a... <br/> turtle photo </p>
-<img src="photos/turtle.png" height="194px" width="259px" alt="It was a turtle :("/>
+<img border="2px" style="background:aquamarine" src="photos/turtle.png" height="194px" width="259px"
+     alt="It was a turtle :("/>
 <!-- Thats a really nice photo -->
 
-<ol><h2>Thats gona be ordered list</h2>
+<h3 style="font-family: Cambria Math, sans-serif"> Thats gona be ordered list</h3>
+<ol style="font-family: Comic Sans MS, serif">
     <li><b>turtles are cool</b></li>
     <li> turtles are green</li>
-    <li>I like green</li>
+    <li style="font-size:large;color:darkorange">I like green</li>
 </ol>
-    <hr/>
+<p align="right" title="IM GONNA SHOW YOU AWESOME STUFF">
+    <button>
+        <a href="https://www.google.pl/search?q=nice+turtles&source=lnms&tbm=isch&sa=X&ved=0ahUKEwi2w6Tcp6nbAhUuS5oKHRu-Dw4Q_AUICigB&biw=982&bih=954"
+           target="_blank">
+            <img src="photos/turtle.png" border="5px" style="background-color: red;width: 200px;height: 190px;"/>
+        </a>
+    </button>
+</p>
+<hr width="50%" style="width: auto"/>
+<p align="center">
+    <button style="background-color: burlywood">
+        <a href="https://www.bialykadr.com/" target="_blank">
+            <img src="photos/church.jpg" border="3px" title="our wedding" style="width: 450px;height: 280px">
+        </a>
+    </button>
+</p>
 
 <ul><b>Unordered list</b>
     <br/> additional line with <'br/>
@@ -25,10 +70,158 @@
     <li>points</li>
 </ul>
 
+<p style="color: red" align="center">
+    This is a red, centered text.
+</p>
+<hr width="50%" align="left"/>
+
+
 <p align="center">
-   This is a text.
-   <hr width="50%" align="left" />
+    <button style="background: darkred "><a href="https://github.com/Qubicus" style="color: aqua" target="_blank">Im a
+        colorful button</a></button>
+<hr style="text-align: center;width: 75%;"/>
+<h1 style="text-align: center;color:teal;font-family: 'Comic Sans MS',sans-serif">Formatting</h1>
+<div id="demo">
+    <ol>
+        <li style="text-align: center"><b>Bold text</b></li>
+        <li><strong>Strong text</strong></li>
+        <li><i>Italic text</i></li>
+        <li><em>Emphasized text</em></li>
+        <li>
+            <mark>Marked text</mark>
+        </li>
+        <li>
+            <small>Small text</small>
+        </li>
+        <li>
+            <del>Deleted text</del>
+        </li>
+        <li>
+            <ins>Inserted text</ins>
+        </li>
+        <li><sub>Subscript text</sub></li>
+        <li><sup>superscript text</sup></li>
+    </ol>
+</div>
+<button type="button" onclick="document.getElementById('demo').style.fontFamily='Comic Sans Ms, sans-serif'"> Button
+</button>
+<hr style="text-align: center;width: 75%"/>
+<h1>Quotations</h1>
+
+<q>element defines a short quotation</q>
+<p>Here is a quote from WWF's website:</p>
+
+<blockquote cite="https://www.w3schools.com/html/html_quotation_elements.asp">
+    The HTML <'blockquote> element defines a section that is quoted from another source.
+    Browsers usually indent <'blockquote> elements.
+</blockquote>
+
+<p>abbreviation<abbr title="Rafal Sobotka">"RS"</abbr>or an acronym </p>
+
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+</address>
+<p>line break before and after address</p>
+
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<bdo dir="rtl">This text will be written from right to left</bdo>
+<hr width="50%"/>
+<h3 style="text-align: center;font-size: x-large;font-family: 'Comic Sans MS',sans-serif;color: darkorchid;border: 5px dotted tomato; background: rgba(0,128,128,0.6);">
+    Creating Tables</h3>
+
+<table border="2" align="center" style="border-color: salmon">
+    <tr>
+        <td bgcolor="red">Red</td>
+        <td>Blue</td>
+        <td>Green</td>
+    </tr>
+    <tr>
+        <td bgcolor="yellow">Yellow</td>
+        <td colspan="2">Orange</td>
+    </tr>
+</table>
+
+<br/>
+<h1 id="table"><span id="table">My Schedule</span></h1>
+<table class="yellow-table"
+       style="width: 100%;font-family:Elephant,sans-serif;background-color:rgba(127,255,212,0.5); color: darkorchid;border:5px dashed yellow;border-collapse: collapse">
+    <tr>
+        <th>Day</th>
+        <th>Monday</th>
+        <th>Tuesday</th>
+        <th>Wednesday</th>
+        <th>Thursday</th>
+        <th>Friday</th>
+        <th>Saturday</th>
+        <th>Sunday</th>
+    </tr>
+    <tr>
+        <td>8:30</td>
+        <td class="activity">Learn</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td colspan="2" rowspan="5" style="text-align:center;color:tomato;font-size:large; ">Coding</td>
+    </tr>
+    <tr>
+        <td>9:30-11:30</td>
+        <td></td>
+        <td class="activity">Practise</td>
+        <td></td>
+        <td></td>
+        <td></td>
+
+    </tr>
+    <tr>
+        <td>12:30-15:00</td>
+        <td></td>
+        <td></td>
+        <td class="activity">Play</td>
+        <td></td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>16:00-18:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="activity">Code</td>
+        <td></td>
+    </tr>
+    <tr>
+        <td>19:30-21:30</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="activity">Discuss</td>
+    </tr>
+</table>
+<br/><br/><br/><br/><br/>
+<table align="center" border="2" bordercolor="red" bgcolor="black">
+    <tr>
+        <td rowspan="2" ; bgcolor="red">Red</td>
+        <td bgcolor="blue">Blue</td>
+        <td bgcolor="green">Green</td>
+    </tr>
+    <tr>
+        <td colspan="2" ; bgcolor="yellow">Yellow</td>
+
+    </tr>
+</table>
+<br/>
+<hr width="75%" style="border: 2px dashed blue">
+
+<p>Lubie <span
+        style="border: 5px dotted palegreen;font-family: 'Comic Sans MS',serif;font-weight: bold;font-style: italic"> bardzo </span>Placki
 </p>
 
+<hr/>
 </body>
 </html>
