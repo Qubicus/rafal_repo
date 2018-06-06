@@ -3,4 +3,5 @@
     height: 250px;
     border: 3px dashed rgba(143, 188, 143, 0.5);
     color: yellow;
+    max-width: 100%;
 }
