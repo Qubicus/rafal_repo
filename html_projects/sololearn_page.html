@@ -29,6 +29,23 @@
             padding: 10px;
         }
 
+        .menu {
+            margin: 0;
+            padding:;
+            background-color: white;
+            overflow: hidden;
+            list-style-type: none;
+        }
+        .menu li {
+            float: left;
+            margin-right:5%;
+        }
+        .menu li:hover {
+            background-color: #20bcd5;
+            color:yellow ;
+            animation:;
+        }
+
 
     </style>
 </head>
@@ -82,7 +99,7 @@
 <hr style="text-align: center;width: 75%;"/>
 <h1 style="text-align: center;color:teal;font-family: 'Comic Sans MS',sans-serif">Formatting</h1>
 <div id="demo">
-    <ol>
+    <ol start="99">
         <li style="text-align: center"><b>Bold text</b></li>
         <li><strong>Strong text</strong></li>
         <li><i>Italic text</i></li>
@@ -147,9 +164,10 @@
 </table>
 
 <br/>
-<h1 id="table"><span id="table">My Schedule</span></h1>
+<h1 id="table" style="margin-bottom:auto;"><span id="table">My Schedule</span></h1>
 <table class="yellow-table"
        style="width: 100%;font-family:Elephant,sans-serif;background-color:rgba(127,255,212,0.5); color: darkorchid;border:5px dashed yellow;border-collapse: collapse">
+    <caption>My Schedule</caption>
     <tr>
         <th>Day</th>
         <th>Monday</th>
@@ -221,7 +239,15 @@
 <p>Lubie <span
         style="border: 5px dotted palegreen;font-family: 'Comic Sans MS',serif;font-weight: bold;font-style: italic"> bardzo </span>Placki
 </p>
-
 <hr/>
+<div>
+    <ul class="menu">
+        <li>Home</li>
+        <li>Photos</li>
+        <li>More</li>
+        <li>Options</li>
+    </ul>
+</div>
+<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
 </body>
 </html>
