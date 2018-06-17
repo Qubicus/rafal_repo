@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>test form</title>
+    <style>
+        #form {
+            margin-left: 35%;
+            line-height: 25px;
+        }
+    </style>
+</head>
+<body>
+
+<div id="form">
+    <h2> Form to write </h2>
+    <form autocomplete="off" action="photos" method="get">
+        <fieldset style="width: 215px">
+            <legend>Personal Information:</legend>
+            <label for="firstname">First Name:</label>
+            <input type="text" name="firstname" id="firstname">
+            <br/>
+            <label for="surname">Surname:</label>
+            <input type="text" name="surname" id="surname">
+            <br/>
+            <label for="username">User name:</label>
+            <input type="text" name="username" id="username">
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male" id="male">
+            <br/>
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female" id="female">
+            <br/>
+            <label for="other">Other</label>
+            <input type="radio" name="gender" value="other" id="other">
+            <br/>
+            <label for="notes">Notes</label>
+            <textarea id="notes" style="width:200px;height:50px"></textarea>
+            <br/>
+            <label for="subject">Subject you prefer</label>
+            <select id="subject" name="preferences">
+                <option value="math" selected>Math</option>
+                <option value="geo">Geo</option>
+                <option value="physics">Physics</option>
+            </select>
+            <button type="button" onclick="alert('hi, go back to form')">click me</button>
+            <br/>
+            <label for="region">Country</label>
+            <input list="country" id="region">
+            <datalist id="country">
+                <option value="Poland"></option>
+                <option value="England">
+                <option value="USA">United States</option>
+            </datalist>
+            <br/>
+            <input type="reset" value="clean form">
+            <br/>
+            <input type="submit" value="Ok">
+
+
+        </fieldset>
+    </form>
+</div>
+</body>
+</html>
