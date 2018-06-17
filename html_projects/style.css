@@ -1,7 +1,7 @@
 .turtle {
-    width: 350px;
-    height: 250px;
+    width: 400px;
+    max-height:100%;
     border: 3px dashed rgba(143, 188, 143, 0.5);
-    color: yellow;
+    background-color: yellow;
     max-width: 100%;
 }

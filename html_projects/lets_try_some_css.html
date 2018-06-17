@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width scale=1.0">
     <title>CSS is FUN</title>
     <link rel="stylesheet" href="style.css">
     <script src="java.js"></script>
@@ -24,15 +25,35 @@
          src="https://mobirise.com/bootstrap-gallery/assets1/images/photo-1477519242566-6ae87c31d212-1350x900.jpg">
 </div>
 
-<form style="width: 250px;margin-left: 45%">
-    First name:<br/>
-    <input type="text" name="firstname"><br/>
-    Last name:<br/>
-    <input type="text" name="lastname"><br/>
-    <input type="radio" name="gender" value="male">Male<br/>
-    <input type="radio" name="gender" value="female">Female<br/>
-    <input type="radio" name="gender" value="other">Other
-
+<form method="GET" action="photos" target="_blank" autocomplete="off" style="width: 250px;margin-left: 40%">
+    <fieldset>
+        <legend> Input some data please</legend>
+        First name:<br/>
+        <input type="text" name="firstname"><br/>
+        <label for="lastname">Last Name</label><br/>
+        <input type="text" name="lastname" id="lastname"><br/>
+        <input type="radio" name="gender" value="male" id="male">
+        <label for="male">Male</label><br/>
+        <input type="radio" name="gender" value="female">Female<br/>
+        <input type="radio" name="gender" value="other">Other<br/>
+        <select name="people" size="2" multiple>
+            <option value="Rafal">Rafal</option>
+            <option value="Zosia">Zoik</option>
+            <option value="other">Inni</option>
+        </select>
+        <br/>
+        Additional info:
+        <textarea name="additional info" style="width: 250px; height: 100px">
+        </textarea>
+        <input list="some options">
+        <datalist id="some options">
+            <option value="like">what</option>
+            <option value="not rly">
+        </datalist>
+        <br/>
+        <br/>
+        <input type="submit" value="gogogo">
+    </fieldset>
 </form>
 
 
