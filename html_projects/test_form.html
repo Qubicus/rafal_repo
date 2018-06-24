@@ -12,9 +12,16 @@
 </head>
 <body>
 
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+</nav>
+
 <div id="form">
     <h2> Form to write </h2>
-    <form autocomplete="off" action="photos" method="get">
+    <form autocomplete="off" action="photos" target="_blank" method="get">
         <fieldset style="width: 215px">
             <legend>Personal Information:</legend>
             <label for="firstname">First Name:</label>
@@ -48,18 +55,25 @@
             <button type="button" onclick="alert('hi, go back to form')">click me</button>
             <br/>
             <label for="region">Country</label>
-            <input list="country" id="region">
+            <input list="country" name="country" id="region">
             <datalist id="country">
                 <option value="Poland"></option>
                 <option value="England">
                 <option value="USA">United States</option>
             </datalist>
             <br/>
+            Do You have a vehicle ?
+            <br/>
+            <input type="checkbox" name="vehicle[]" value="car" checked>Car
+            <br/>
+            <input type="checkbox" name="vehicle[]" value="bicycle">Bicycle
+            <br/>
+
+
             <input type="reset" value="clean form">
             <br/>
             <input type="submit" value="Ok">
-
-
+            <br/>
         </fieldset>
     </form>
 </div>
