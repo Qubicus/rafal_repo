@@ -1,0 +1,58 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: ;
+}
+
+.container {
+    width: 350px;
+    height: 400px;
+    margin: 60px auto;
+    border-radius: 10px;
+    box-shadow: 5px 10px 20px #888888;
+}
+
+.Rich_media {
+    width: 350px;
+    height: 197px;
+    border-radius: 10px 10px 0 0;
+}
+
+img#valley {
+    max-width: 100%;
+    border-radius: 5px 5px 0 0;
+}
+
+.Primary_title {
+    margin: 20px 10px;
+}
+
+.Primary_title p {
+    color: gray;
+    margin-top: 5px;
+}
+
+.Supportin_text {
+    color: grey;
+    margin: 0 10px 10px 10px;
+}
+
+.Actions {
+    margin: 30px 10px 10px 15px;
+}
+
+button {
+    border: none;
+    background-color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    color: #8607ff;
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+#button_2 {
+    margin-left: 15px;
+}
