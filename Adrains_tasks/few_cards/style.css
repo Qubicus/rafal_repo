@@ -113,7 +113,7 @@ hr {
 
 @media screen and (max-width: 1435px) {
     .container {
-        justify-content: flex-start;
+        align-items: center;
 
     }
     .container_card{
